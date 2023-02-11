@@ -64,7 +64,7 @@ console.log(zodiac(26, "enero"));
 // La cabecera del procedimiento tendrá el siguiente aspecto: function continent(country)
 
 
-function continent(country) {
+function continent(country: string) {
 
     if (country == "españa" || country == "francia" || country == "italia" || country == "alemania" || country == "portugal") {
 
@@ -94,7 +94,7 @@ console.log(continent("senegal"));
 // - “El numero es impar”, si el numero introducido como parámetro de entrada es impar
 
 
-function isEven(numero1) {
+function isEven(numero1: number) {
 
     if (numero1 % 2 == 0) {
 
