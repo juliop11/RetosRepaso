@@ -19,19 +19,18 @@
 // devuelva el array revertido. No se puede utilizar el método revert de la clase array
 // La cabecera de la función tendrá el siguiente aspecto: function myRevert(myArr)  
 
-///NO ME SALE DEVOLVER EN ARRAY///
 
-// function myRevert(myArr: string) {
+// function myRevert(myArr: number[]) {
 
-//     let array = "";
+//     let array:number[] = [];
 
 //     for (let i = myArr.length - 1; i >= 0; i--) {
 
-//         array += myArr[i];
+//         array.push( myArr[i]);
 //     }
 //     return array;
 // }
-// console.log(myRevert("1, 2, 3, 4, 5"));
+// console.log(myRevert([1, 2, 3, 4, 5]));
 
 // Realizar una función que reciba como parámetro un array de strings que contenga
 // nombres de colores y te imprima en cada caso si el color está en el arcoíris o no.
@@ -60,19 +59,22 @@
 // almacenadas en un array.
 // La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
 
-// let array = "sumando letras";
+let array = ["sumando", "letras"];
 
-// function add(myWords: string) {
+export function add(myWords: string[]) {
 
-//     let suma: number = 1;
+    let suma: number = 0;
 
-//     for (let i = 0; i < myWords.length - 1; i++) {
+    for (let i = 0; i < myWords.length; i++) {
 
-//         if (myWords[i] != " ") {
+        for (let j = 0; j < myWords[i].length; j++) {
 
-//             suma += 1;
-//         }
-//     }
-//     return suma;
-// }
+            if (myWords[i][j] != " ") {
+
+                suma += 1
+            }
+        }
+    }
+    return suma;
+}
 // console.log(add(array));
