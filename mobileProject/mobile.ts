@@ -25,12 +25,12 @@ export class Mobile {
     private color: string
     private price: number
 
-    constructor(nombre: string, marca: string, modelo: string, colors: string, precio: number) {
-        this.name = nombre;
-        this.trademark = marca;
-        this.model = modelo;
-        this.color = colors;
-        this.price = precio;
+    constructor(Nombre: string, Marca: string, Modelo: string, Colors: string, Precio: number) {
+        this.name = Nombre;
+        this.trademark = Marca;
+        this.model = Modelo;
+        this.color = Colors;
+        this.price = Precio;
     }
 
     public getName(): string {
@@ -63,4 +63,34 @@ export class Mobile {
     public setTitle(price: number): void {
         this.price = price;
     }
+
+    imprimePatron() {
+
+        console.log("The characteristics of the mobile name are:");
+
+        return `· Nombre: ${this.name} \n · Marca: ${this.trademark} \n · Modelo: ${this.model} \n · Colors: ${this.color} \n · Precio: ${this.price}`;
+
+    }
 }
+
+
+
+
+
+// Crear un nuevo método que imprima por consola todas las características de la clase
+// siguiendo el siguiente patrón:
+
+// “The characteristics of the mobile name are:”
+
+// • Name: name
+// • Trademark: tradeMark
+// • model: model
+// • Color: color
+// • Price: price
+
+// 2. Crear tres objetos de la clase Mobile en el fichero mobileTest.ts.
+
+// 3. Crear un array denominado myMobiles en el fichero mobileTest.ts que tendrá los tres
+// objetos creados en el punto 2.
+
+// 4. Mostrar los datos de myMobiles invocando al método del punto 1.

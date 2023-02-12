@@ -1,5 +1,11 @@
 import { Mobile } from "./mobile";
 
-let agenda: Mobile = new Mobile("Samsung", "Galaxy", 's21', 'azul', 800);
+let movil: Mobile = new Mobile("Samsung", "Galaxy", "s21", "azul", 800);
+let movil1: Mobile = new Mobile("Redmi", "Note", "9s", "negro", 200);
+let movil2: Mobile = new Mobile("Xiaomi", "Mi", "12f", "verde", 300);
 
-console.log(agenda);
+let myMobiles: Mobile[] = [movil, movil1, movil2]
+
+//console.log(movil);
+console.log(myMobiles);
+
