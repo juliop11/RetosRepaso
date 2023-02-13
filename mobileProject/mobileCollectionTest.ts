@@ -11,3 +11,12 @@ let myMobiles: Mobile[] = [movil, movil1, movil2, movil3]
 let myCollection: MobileCollection = new MobileCollection(myMobiles);
 
 console.log(myCollection);
+
+for (let i = 0; i < myMobiles.length; i++) {
+    console.log(myMobiles[i].getPrice());
+}
+
+console.log("***SUMA TOTAL***");
+console.log(myCollection.getTotalPriceCalculation());
+
+console.log(myCollection.printCollection());

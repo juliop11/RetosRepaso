@@ -66,12 +66,12 @@ export class Mobile {
 
     imprimePatron() {
 
-        console.log("The characteristics of the mobile name are:");
-
-        return `· Nombre: ${this.name} \n · Marca: ${this.trademark} \n · Modelo: ${this.model} \n · Colors: ${this.color} \n · Precio: ${this.price}`;
-
+        return `The characteristics of the mobile name are: \n \n · Nombre: ${this.name} \n · Marca: ${this.trademark} \n · Modelo: ${this.model} \n · Colors: ${this.color} \n · Precio: ${this.price} \n\n The characteristics of the mobile name are:\n · Nombre: ${this.name} \n · Marca: ${this.trademark} \n · Modelo: ${this.model} \n · Colors: ${this.color} \n · Precio: ${this.price} \n \n..... `;
+        
     }
 }
+
+
 
 
 
