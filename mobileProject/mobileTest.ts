@@ -6,7 +6,7 @@ let movil2: Mobile = new Mobile("Xiaomi", "Mi", "12f", "verde", 300);
 
 let myMobiles: Mobile[] = [movil, movil1, movil2]
 
-console.log(movil.imprimePatron());
+console.log(movil.printPattern());
 //console.log(movil);
 //console.log(myMobiles);
 
