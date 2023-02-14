@@ -43,7 +43,6 @@ export class Point {
         let convertir1 = String(this.y);
 
         return `"(${convertir},${convertir1})"`;
-
     }
 
     public distanceToOrigin() {
@@ -84,6 +83,24 @@ export class Point {
         }
 
         return resultado;
+    }
+
+    calculateNearest(points: Point[]): Point {
+
+        let disMinima = Number.MAX_VALUE;
+        let puntoMinimo;
+
+        for (let i = 0; i < points.length; i++) {
+
+            let disActual = this.calculateDistance(points[i]);
+
+            if (disActual < disMinima) {
+
+                disMinima = disActual
+            }
+            puntoMinimo = points[i]
+        }
+        return puntoMinimo
     }
 }
 
