@@ -1,8 +1,9 @@
 import { Point } from "./point";
 
 
-let myPoint: Point = new Point(5,8
-    )
+let myPoint: Point = new Point(6, 12)
+let myPoint1: Point = new Point(4, 8)
 
 console.log(myPoint.toString());
-console.log(myPoint.distanceToOrigin());
+console.log(myPoint.calculateDistance(myPoint1));
+

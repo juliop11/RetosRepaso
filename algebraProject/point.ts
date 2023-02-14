@@ -22,7 +22,7 @@ export class Point {
 
     constructor(numerox: number, numeroy: number) {
         this.x = numerox;
-        this.y = numeroy
+        this.y = numeroy;
     }
     public getX(): number {
         return this.x;
@@ -47,16 +47,19 @@ export class Point {
     }
 
     public distanceToOrigin() {
-      
 
-        let x = this.x - this.x
-        let y = this.y - this.y
-
-        return Math.sqrt(x * x + y * y)
+        return Math.sqrt(this.getX())**2 + (this.getY()**2)
     }
 
+    public calculateDistance(anotherPoint: Point):number {
 
+        let x = anotherPoint.getX() - this.getX()
+        let y = anotherPoint.getY() - this.getY()
+
+       return Math.sqrt(x * x + y * y)
+    }
 }
+
 
 
 
