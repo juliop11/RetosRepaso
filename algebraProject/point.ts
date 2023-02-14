@@ -48,15 +48,42 @@ export class Point {
 
     public distanceToOrigin() {
 
-        return Math.sqrt(this.getX())**2 + (this.getY()**2)
+        return Math.sqrt(this.getX() * this.getX()) + (this.getY() * this.getY())
     }
 
-    public calculateDistance(anotherPoint: Point):number {
+    public calculateDistance(anotherPoint: Point): number {
 
         let x = anotherPoint.getX() - this.getX()
         let y = anotherPoint.getY() - this.getY()
 
-       return Math.sqrt(x * x + y * y)
+        return Math.sqrt(x * x + y * y)
+    }
+    public calculateQuadrant(): number {
+
+        let resultado: number = 0;
+
+        if ((this.getX() == 0) || (this.getY() == 0)) {
+
+            resultado = 0;
+        }
+        else if ((this.getX() > 0) && (this.getY() > 0)) {
+
+            resultado = 1;
+        }
+        else if ((this.getX() < 0) && (this.getY() > 0)) {
+
+            resultado = 2;
+        }
+        else if ((this.getX() < 0) && (this.getY() < 0)) {
+
+            resultado = 3;
+        }
+        else if ((this.getX() > 0) && (this.getY() < 0)) {
+
+            resultado = 4;
+        }
+
+        return resultado;
     }
 }
 
@@ -65,13 +92,7 @@ export class Point {
 
 
 
-// Calcula la distancia entre dos puntos de coordenadas conocidas.
-// La fórmula final a despejar es:
-// D² = (X₂-X₁)² + (Y₂-Y₁)²
-// Donde:
-// (D) La distancia entre dos puntos.
-
-
+//RETO 2
 // 1. Crear un método denominado distanceToOrigin():number que devuelva la distancia del
 // punto al origen de coordenadas (0,0).
 // NOTA: Buscar en Google la formula para calcular la distancia.
@@ -82,3 +103,21 @@ export class Point {
 // NOTA: Buscar en Google la formula para calcular la distancia entre dos puntos.
 
 // 3. Modificar el fichero pointTest.ts para probar los nuevos métodos
+
+//RETO 3
+// 1. Programa un método denominado calculateQuadrant():number que devuelva el
+// cuadrante en el que se encuentra el punto.
+
+// El prototipo del método se muestra a continuación:
+
+// - Devuelve 0 si x o y son 0.
+
+// - Devuelve 1 si está en el primer cuadrante (x e y positivos).
+
+// - Devuelve 2 si está en el segundo cuadrante (x negativo e y positivo).
+
+// - Devuelve 3 si está en el tercer cuadrante (x e y negativos).
+
+// - Devuelve 4 si está en el cuarto cuadrante (x positivo e y negativo).
+
+// 2. Modificar el fichero pointTest.ts para probar este nuevo método.

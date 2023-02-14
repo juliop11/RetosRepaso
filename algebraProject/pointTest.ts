@@ -7,3 +7,4 @@ let myPoint1: Point = new Point(4, 8)
 console.log(myPoint.toString());
 console.log(myPoint.calculateDistance(myPoint1));
 
+console.log(myPoint.calculateQuadrant());
