@@ -45,5 +45,37 @@ export class Point {
         return `"(${convertir},${convertir1})"`;
 
     }
+
+    public distanceToOrigin() {
+      
+
+        let x = this.x - this.x
+        let y = this.y - this.y
+
+        return Math.sqrt(x * x + y * y)
+    }
+
+
 }
 
+
+
+
+
+// Calcula la distancia entre dos puntos de coordenadas conocidas.
+// La fórmula final a despejar es:
+// D² = (X₂-X₁)² + (Y₂-Y₁)²
+// Donde:
+// (D) La distancia entre dos puntos.
+
+
+// 1. Crear un método denominado distanceToOrigin():number que devuelva la distancia del
+// punto al origen de coordenadas (0,0).
+// NOTA: Buscar en Google la formula para calcular la distancia.
+
+// 2. Crear un método denominado calculateDistance(anotherPoint:Point):number, que
+// devuelva la distancia entre el punto representado por la instancia actual del objeto y otra
+// instancia de Punto que se recibe como parámetro denominada anotherPoint.
+// NOTA: Buscar en Google la formula para calcular la distancia entre dos puntos.
+
+// 3. Modificar el fichero pointTest.ts para probar los nuevos métodos
