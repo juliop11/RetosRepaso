@@ -100,6 +100,7 @@ export class Point {
             }
             puntoMinimo = points[i]
         }
+        
         return puntoMinimo
     }
 }
