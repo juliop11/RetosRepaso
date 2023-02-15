@@ -67,14 +67,8 @@ export function add(myWords: string[]) {
 
     for (let i = 0; i < myWords.length; i++) {
 
-        for (let j = 0; j < myWords[i].length; j++) {
-
-            if (myWords[i][j] != " ") {
-
-                suma += 1
-            }
-        }
+           suma += myWords[i].length;   
     }
     return suma;
 }
-// console.log(add(array));
+console.log(add(array));

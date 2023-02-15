@@ -17,6 +17,6 @@ for (let i = 0; i < myMobiles.length; i++) {
 }
 
 console.log("***SUMA TOTAL***");
-console.log(myCollection.getTotalPriceCalculation());
+console.log(myCollection.totalPriceCalculation());
 
 console.log(myCollection.printCollection());

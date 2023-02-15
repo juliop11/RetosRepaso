@@ -64,9 +64,11 @@ export class Mobile {
         this.price = price;
     }
 
-    imprimePatron() {
+    printPattern() {
 
-        return `The characteristics of the mobile name are: \n \n · Nombre: ${this.name} \n · Marca: ${this.trademark} \n · Modelo: ${this.model} \n · Colors: ${this.color} \n · Precio: ${this.price} \n\n The characteristics of the mobile name are:\n · Nombre: ${this.name} \n · Marca: ${this.trademark} \n · Modelo: ${this.model} \n · Colors: ${this.color} \n · Precio: ${this.price} \n \n..... `;
+        return `The characteristics of the mobile name are: \n \n · Nombre: ${this.name} \n · Marca: ${this.trademark} \n · Modelo: ${this.model}
+         \n · Colors: ${this.color} \n · Precio: ${this.price} \n\n The characteristics of the mobile name are:\n · Nombre: ${this.name}
+          \n · Marca: ${this.trademark} \n · Modelo: ${this.model} \n · Colors: ${this.color} \n · Precio: ${this.price} \n \n..... `;
         
     }
 }
