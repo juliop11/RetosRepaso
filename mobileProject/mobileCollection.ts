@@ -25,7 +25,7 @@ export class MobileCollection {
     constructor(Mobiles: Mobile[]) {
 
         this.mobiles = Mobiles;
-        this.totalPrice = this.totalPriceCalculation()
+        this.totalPrice = this.totalPriceCalculation();
 
     }
 
@@ -41,7 +41,6 @@ export class MobileCollection {
     public setTotalPrice(totalPrice: number): void {
         this.totalPrice = this.totalPrice;
     }
-
     public totalPriceCalculation(): number {
 
         let suma = 0;
@@ -61,6 +60,7 @@ export class MobileCollection {
         console.log("Price overall: " + this.getTotalPrice());
     }
 }
+
 
 
 
